@@ -7,5 +7,5 @@ color:
 
 # Font Families
 font:
-  primary: 'Palatino' #'Montserrat, "Helvetica Neue",Helvetica,Arial,sans-serif'
-  secondary: 'serif' #'"Droid Serif", "Helvetica Neue", Helvetica,Arial,sans-serif'
+  primary: "'Sorts Mill Goudy', 'serif'" #'Montserrat, "Helvetica Neue",Helvetica,Arial,sans-serif'
+  secondary: "'Sorts Mill Goudy', 'serif'" #'"Droid Serif", "Helvetica Neue", Helvetica,Arial,sans-serif'
