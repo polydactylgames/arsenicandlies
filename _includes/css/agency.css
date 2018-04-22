@@ -11,6 +11,10 @@ body {
 	background-color: black;
 }
 
+.form-group {
+    margin-bottom: 5em;
+}
+
 .text-muted {
     color: #{{ site.data.template.color.muted }};
 }
@@ -20,7 +24,7 @@ body {
 }
 
 p {
-    font-size: 1.2em;
+    font-size: 1.1em;
     line-height: 1.75;
 }
 
@@ -325,11 +329,28 @@ header .intro-text .intro-heading {
     }
 }
 
+ul.text-list {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+ul.text-list li {
+  padding-left: 3em;
+  text-indent: -2em;
+}
+
+ul.text-list li:before {
+  content: "\2756";
+  padding-right: 1.1em;
+}
+
 section {
     padding: 100px 0;
 }
 
 section h2.section-heading {
+    color: #{{ site.data.template.color.secondary }};
     margin-top: 0;
     margin-bottom: 15px;
     font-size: 40px;
