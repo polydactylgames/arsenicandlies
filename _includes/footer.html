@@ -2,10 +2,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; {{ site.title }} {{ 'now' | date: "%Y" }}</span>
+                    <span class="copyright">Copyright &copy; Karolina Soltys {{ 'now' | date: "%Y" }}</span>
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">
+					<!-- TODO: add BGG, RPGG -->
                         {% for network in site.social %}
                         <li><a href="{{ network.url }}"><i class="fa fa-{{ network.title }}"></i></a>
                         </li>
@@ -14,9 +15,7 @@
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline quicklinks">
-                        <li><a href="#">Privacy Policy</a>
-                        </li>
-                        <li><a href="#">Terms of Use</a>
+                        <li><a href="mailto:karolina@polydactylgames.com">karolina@polydactylgames.com</a>
                         </li>
                     </ul>
                 </div>

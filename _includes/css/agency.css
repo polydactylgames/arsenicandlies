@@ -162,6 +162,8 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl, 
 .btn-xl:focus {
     padding: 20px 40px;
+	margin-top: 10px;
+	margin-bottom: 30px;
     border-color: #{{ site.data.template.color.primary }};
     border-radius: 3px;
     font-family: {{ site.data.template.font.primary }};
@@ -380,9 +382,28 @@ section {
 }
 
 section.orange {
-	background-color: #{{ site.data.template.color.primary }};
+    background-color: #{{ site.data.template.color.primary }};
 	color: black;
 }
+
+section.orange .section-heading {
+    color: black;
+}
+
+section.orange h3 {
+    color: black;
+}
+
+section.orange h4 {
+    color: black;
+}
+
+section.orange p {
+    color: black;
+}
+
+
+
 
 section h2.section-heading {
     color: #{{ site.data.template.color.secondary }};
@@ -724,24 +745,30 @@ section#contact .section-heading {
     color: #fff;
 }
 
-section#contact .form-group {
-    margin-bottom: 25px;
+.divider-row {
+    margin-bottom: 100px;
+	
+}
+.form-group {
+    margin-bottom: 10px;
+	
 }
 
-section#contact .form-group input,
-section#contact .form-group textarea {
-    padding: 20px;
+.form-group input,
+.form-group textarea {
+    padding: 10px;
+	color: black
 }
 
-section#contact .form-group input.form-control {
+.form-group input.form-control {
     height: auto;
 }
 
-section#contact .form-group textarea.form-control {
-    height: 236px;
+.form-group textarea.form-control {
+    height: 250px;
 }
 
-section#contact .form-control:focus {
+.form-control:focus {
     border-color: #{{ site.data.template.color.primary }};
     box-shadow: none;
 }
