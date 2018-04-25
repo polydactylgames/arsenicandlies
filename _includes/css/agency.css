@@ -320,7 +320,7 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url('{{ site.baseurl }}/img/header-bg.jpg');
+    background-image: url('{{ site.baseurl }}/img/banner_amp.png');
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
@@ -377,6 +377,11 @@ header .intro-text .intro-heading {
 
 section {
     padding: 0px 0;
+}
+
+section.orange {
+	background-color: #{{ site.data.template.color.primary }};
+	color: black;
 }
 
 section h2.section-heading {
