@@ -24,6 +24,10 @@ div.right-col {
     padding-right: 5em;
 }*/
 
+a.link {
+	text-decoration: underline
+}
+
 b {
     color: #{{ site.data.template.color.secondary }};    
 }
@@ -54,6 +58,16 @@ ul.text-list li:before {
 
 .text-muted {
     color: #{{ site.data.template.color.muted }};
+	text-align: left
+}
+
+.text-center {
+    color: #{{ site.data.template.color.muted }};
+	text-align: center
+}
+
+b.black {
+	color: black;
 }
 
 .text-primary {
