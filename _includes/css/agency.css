@@ -16,6 +16,11 @@ div.col-md-6 {
     padding-right: 4em;
        
 }
+
+.vertical-center {
+  display: flex;
+  align-items: center;
+}
 /*div.left-col {
     padding-left: 5em;
 }
@@ -298,8 +303,6 @@ a.outlined:hover {
    background-color: #{{ site.data.template.color.primary }};
 }*/
 
-
-
 @media(min-width:768px) {
     .navbar-default {
         padding: 10px 0;
@@ -308,6 +311,10 @@ a.outlined:hover {
         -webkit-transition: all .6s;
         -moz-transition: all .6s;
         transition: all .6s;
+    }
+
+    .navbar-brand>img {
+        margin-top: -5px;
     }
 
     .navbar-default .navbar-brand {
