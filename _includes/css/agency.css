@@ -1017,3 +1017,17 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #{{ site.data.template.color.primary }};
 }
+
+
+.extras-btn {
+}
+
+.extras-btn:hover,
+.extras-btn:focus,
+.extras-btn:active,
+.extras-btn.active,
+.open {
+    border-color: #{{ site.data.template.color.secondary }};
+    color: black;
+    background-color: #{{ site.data.template.color.primary }};
+}
