@@ -336,6 +336,15 @@ fieldset[disabled] .btn-xl.active {
     background-color: #{{ site.data.template.color.secondary }};
 }
 
+.navbar-default .navbar-nav>.active>.buy-link,
+.navbar-default .navbar-nav>.active>.buy-link:focus {
+	border-color: #{{ site.data.template.color.primary }};
+}
+
+.navbar-default .navbar-nav>.active>.buy-link:hover {
+	border-color: #{{ site.data.template.color.secondary }};
+}
+
 /*a.outlined,
 a.outlined:focus {
    border-radius: 3px;
@@ -385,6 +394,12 @@ a.outlined:hover {
     .navbar-default.navbar-shrink .navbar-brand {
 		opacity: 1.0;
     }
+
+	.buy-link {
+		margin-left: 0.5em;
+		border: 2px solid;
+    	border-radius: 3px;
+	}
 }
 
 header {
