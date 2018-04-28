@@ -11,6 +11,14 @@ body {
 	background-color: black;
 }
 
+table {
+	border: none;
+}
+
+input {
+	border: none;
+}
+
 div.col-md-6 {
     padding-left: 4em;
     padding-right: 4em;
@@ -30,13 +38,13 @@ div.col-md-6 {
 	border-width: 2px;     */
 	margin: 5px;
     padding: 30px;
-    height: 25em;;
+    height: 25em;
 }
 
-.buybox-bottom {
-    background-color: red;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
+.paypal-table {
+	color: black;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .section-heading.buy-section-heading {
@@ -328,6 +336,15 @@ fieldset[disabled] .btn-xl.active {
     background-color: #{{ site.data.template.color.secondary }};
 }
 
+.navbar-default .navbar-nav>.active>.buy-link,
+.navbar-default .navbar-nav>.active>.buy-link:focus {
+	border-color: #{{ site.data.template.color.primary }};
+}
+
+.navbar-default .navbar-nav>.active>.buy-link:hover {
+	border-color: #{{ site.data.template.color.secondary }};
+}
+
 /*a.outlined,
 a.outlined:focus {
    border-radius: 3px;
@@ -377,6 +394,12 @@ a.outlined:hover {
     .navbar-default.navbar-shrink .navbar-brand {
 		opacity: 1.0;
     }
+
+	.buy-link {
+		margin-left: 0.5em;
+		border: 2px solid;
+    	border-radius: 3px;
+	}
 }
 
 header {
@@ -1008,4 +1031,18 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: #{{ site.data.template.color.primary }};
+}
+
+
+.extras-btn {
+}
+
+.extras-btn:hover,
+.extras-btn:focus,
+.extras-btn:active,
+.extras-btn.active,
+.open {
+    border-color: #{{ site.data.template.color.secondary }};
+    color: black;
+    background-color: #{{ site.data.template.color.primary }};
 }
