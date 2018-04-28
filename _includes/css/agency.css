@@ -11,6 +11,14 @@ body {
 	background-color: black;
 }
 
+table {
+	border: none;
+}
+
+input {
+	border: none;
+}
+
 div.col-md-6 {
     padding-left: 4em;
     padding-right: 4em;
