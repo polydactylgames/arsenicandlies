@@ -38,13 +38,13 @@ div.col-md-6 {
 	border-width: 2px;     */
 	margin: 5px;
     padding: 30px;
-    height: 25em;;
+    height: 25em;
 }
 
-.buybox-bottom {
-    background-color: red;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
+.paypal-table {
+	color: black;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .section-heading.buy-section-heading {
