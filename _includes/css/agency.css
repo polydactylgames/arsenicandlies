@@ -32,7 +32,7 @@ div.col-md-6 {
 	border-style: solid;
 	border-width: 2px;     */
 	margin: 5px;
-    padding: 30px;
+    padding: 2em;
     height: 25em;
 }
 
@@ -44,6 +44,7 @@ div.col-md-6 {
 
 .section-heading.buy-section-heading {
     font-size: 2.3em;
+	margin-top: 0em;
 }
 
 .section-heading.small-heading {
