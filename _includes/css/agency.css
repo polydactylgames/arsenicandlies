@@ -278,6 +278,9 @@ fieldset[disabled] .btn-xl.active {
     background-color: #fff;
 }
 
+.navbar-default {
+	background-color: #222;
+}
 
 .navbar-default .navbar-brand,
 .navbar-default .navbar-brand:focus {
