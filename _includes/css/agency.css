@@ -25,11 +25,6 @@ div.col-md-6 {
        
 }
 
-.vertical-center {
-  display: flex;
-  align-items: center;
-}
-
 .buybox {
     background-color: #{{ site.data.template.color.secondary }};
     border-radius: 30px;
@@ -403,6 +398,11 @@ a.outlined:hover {
 		border: 2px solid;
     	border-radius: 3px;
 		height: 2.7em;
+	}
+
+	.vertical-center {
+	  display: flex;
+	  align-items: center;
 	}
 }
 
