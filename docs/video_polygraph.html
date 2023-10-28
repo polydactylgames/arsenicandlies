@@ -17,8 +17,8 @@
         width: '640',
         videoId: 'yEb4kojtVHw', // Replace with the YouTube video ID you want to embed
         playerVars: {
-          autoplay: 0, // Autoplay disabled
-          controls: 1, // Show video controls
+          autoplay: 1, // Autoplay enabled
+          controls: 0, // Disable video controls
         },
         events: {
           onReady: onPlayerReady
@@ -29,14 +29,14 @@
     // Function called when the YouTube player is ready
     function onPlayerReady(event) {
       // Add a listener to detect the left mouse button press and release
-      document.addEventListener('mousedown', function (event) {
+      document.getElementById('player').addEventListener('mousedown', function (event) {
         if (event.button === 0) {
           // Left mouse button is pressed, double the playback speed
-          player.setPlaybackRate(2);
+          player.setPlaybackRate(3);
         }
       });
 
-      document.addEventListener('mouseup', function (event) {
+      document.getElementById('player').addEventListener('mouseup', function (event) {
         if (event.button === 0) {
           // Left mouse button is released, reset the playback speed to normal
           player.setPlaybackRate(1);
