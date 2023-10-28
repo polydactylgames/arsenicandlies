@@ -29,14 +29,14 @@
     // Function called when the YouTube player is ready
     function onPlayerReady(event) {
       // Add a listener to detect the left mouse button press and release
-      document.getElementById('player').addEventListener('mousedown', function (event) {
+      document.addEventListener('mousedown', function (event) {
         if (event.button === 0) {
           // Left mouse button is pressed, double the playback speed
-          player.setPlaybackRate(3);
+          player.setPlaybackRate(2);
         }
       });
 
-      document.getElementById('player').addEventListener('mouseup', function (event) {
+      document.addEventListener('mouseup', function (event) {
         if (event.button === 0) {
           // Left mouse button is released, reset the playback speed to normal
           player.setPlaybackRate(1);
