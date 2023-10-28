@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mouse Line Graph</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        canvas {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mouse Line Graph</h1>
+    <canvas id="lineGraph" width="400" height="200"></canvas>
+    <button id="startButton">Start Test</button>
+    <script>
+        let testRunning = false;
+        const canvas = document.getElementById('lineGraph');
+        const context = canvas.getContext('2d');
+        const startButton = document.getElementById('startButton');
+        const points = [];
+        startButton.addEventListener('click', () => {
+            if (!testRunning) {
+                startTest();
+            } else {
+                stopTest();
+            }
+        });
+        function startTest() {
+            testRunning = true;
+            startButton.textContent = 'Stop Test';
+            canvas.style.backgroundColor = '#FFFFFF';
+            points.length = 0; // Clear previous points
+            canvas.addEventListener('click', handleMouseClick);
+        }
+        function stopTest() {
+            testRunning = false;
+            startButton.textContent = 'Start Test';
+            canvas.style.backgroundColor = '#FFFFFF';
+            canvas.removeEventListener('click', handleMouseClick);
+        }
+        function handleMouseClick(event) {
+            if (testRunning) {
+                const x = event.clientX - canvas.getBoundingClientRect().left;
+                const y = event.clientY - canvas.getBoundingClientRect().top;
+                points.push({ x, y });
+                drawGraph();
+            }
+        }
+        function drawGraph() {
+            context.clearRect(0, 0, canvas.width, canvas.height);
+            // Draw the graph
+            context.beginPath();
+            context.moveTo(points[0].x, points[0].y);
+            context.strokeStyle = '#00FF00';
+            for (let i = 1; i < points.length; i++) {
+                context.lineTo(points[i].x, points[i].y);
+            }
+            context.stroke();
+        }
+    </script>
+</body>
+</html>
